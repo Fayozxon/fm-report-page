@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: normal;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0d1323;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.user-card {
+  width: 280px;
+  height: 480px;
+  margin: 10px;
+  background-color: #1d204b;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.user-card__info {
+  width: 100%;
+  height: 65%;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #5746ea;
+}
+.user-card__info_image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #faf4f9;
+}
+.user-card__info_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user-card__info h3 {
+  color: #bbb6ff;
+  font-size: 1.15rem;
+}
+.user-card__info h2 {
+  color: #f9f9ff;
+  font-size: 3rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+.user-card__selection {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.user-card__selection .selection-link {
+  padding: 5px 0;
+  color: #5f659b;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.user-card__selection .selection-link:hover, .user-card__selection .selection-link.active {
+  color: #f6fbfd;
+}
+
+.time-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-auto-columns: min-content;
+}
+
+.time-card {
+  position: relative;
+  width: 250px;
+  height: 230px;
+  margin: 10px;
+  background-color: #5746ea;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: default;
+}
+.time-card.work {
+  background-color: #ff8b64;
+}
+.time-card.play {
+  background-color: #56c2e6;
+}
+.time-card.study {
+  background-color: #ff5e7d;
+}
+.time-card.exercise {
+  background-color: #4bcf83;
+}
+.time-card.social {
+  background-color: #7235d1;
+}
+.time-card.self {
+  background-color: #f1c75b;
+}
+.time-card > img {
+  position: absolute;
+  width: 65px;
+  top: -7px;
+  right: 20px;
+  user-select: none;
+  z-index: 5;
+}
+.time-card__info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 85%;
+  padding: 25px;
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #1d204b;
+  z-index: 10;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.time-card__info:hover {
+  background-color: #34397b;
+}
+.time-card__info_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.time-card__info_header .title {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.time-card__info_header .button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.time-card__info_header .button img {
+  width: 18px;
+}
+.time-card__info_time {
+  padding-top: 25px;
+  font-size: 3.4rem;
+  font-weight: lighter;
+}
+.time-card__info_subtitle {
+  color: #bbb6ff;
+}
+
+/*# sourceMappingURL=style.css.map */
